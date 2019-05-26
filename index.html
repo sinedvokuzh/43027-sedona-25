@@ -14,7 +14,7 @@
       <header class="main-header">
         <nav class="main-navigation">
           <a class="logo">
-            <img class="logo" src="img/logo-sedona" width="138" height="70" alt="Sedona logo">
+            <img class="logo" src="img/logo-sedona.svg" width="138" height="70" alt="логотип Sedona">
           </a>
           <ul class="site-navigation">
             <li><a href="info.html">Информация</a></li>
@@ -31,7 +31,7 @@
       <main class="main-content">
         <section class="intro">
           <h1 class="visually-hidden">Седона, штат Аризона</h1>
-          <img class="intro-img" src="" alt="Wellcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
+          <img class="intro-img" src="img/bg-intro.jpg" alt="Wellcome to the gorgeous Sedona. Because the Grand Canyon sucks!" width="1200" height="800">
         </section>
 
         <section class="about">
@@ -48,15 +48,48 @@
             <h2 class="search-title">Заинтересовались?</h2>
             <p class="search-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
           </div>
-
-          <!-- Здесь будет форма
+          <button type="button" class="button search-open-button" name="search-open">Поиск гостиницы в Седоне</button>
+          <!--         -->
+          <!--  form   -->
+          <!--         -->
           <form class="search-form" action="hotel-seach" method="get">
-
+            <!--  check-in field   -->
+            <div class="search-form-field">
+              <label for="check-in">Дата заезда</label>
+              <input type="text" name="check-in" id="check-in" placeholder="24 апреля 2017">
+            </div>
+            <!--  check-out field   -->
+            <div class="search-form-field">
+              <label for="check-out">Дата выезда</label>
+              <input type="text" name="check-out" id="check-out" placeholder="4 июля 2017">
+            </div>
+            <!--  adults field   -->
+            <div class="search-form-field adults-field">
+              <label for="adults">Взрослые</label>
+              <button type="button" name="search-form-input search-form-input-minus">
+                <span class="visually-hidden">Уменьшить</span>
+              </button>
+              <input type="text" name="adults" id="adults" value="2">
+              <button type="button" name="search-form-input search-form-input-plus">
+                <span class="visually-hidden">Увеличить</span>
+              </button>
+            </div>
+            <!--  children field   -->
+            <div class="search-form-field children-field">
+              <label for="children">Дети</label>
+              <button type="button" name="search-form-input search-form-input-minus">
+                <span class="visually-hidden">Уменьшить</span>
+              </button>
+              <input type="text" name="children" id="children" value="0">
+              <button type="button" name="search-form-input search-form-input-plus">
+                <span class="visually-hidden">Увеличить</span>
+              </button>
+            </div>
+            <!--  submit field   -->
+            <button type="submit" name="submit-button" class="search-form-submit">Найти</button>
           </form>
-          -->
 
         </section>
-
         <section class="map">
           <h2 class="visually-hidden">Расположение Седоны на карте</h2>
           <img class="map__img" src="img/map.jpg" width="1200" height="593" alt="Седона на карте">
