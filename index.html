@@ -2,8 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic,latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic,latin-ext" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
@@ -17,25 +18,25 @@
             <img class="logo" src="img/logo-sedona.svg" width="138" height="70" alt="логотип Sedona">
           </a>
           <ul class="site-navigation">
-            <li><a href="info.html">Информация</a></li>
-            <li><a href="gallery.html">Фото и видео</a></li>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
 
-            <li><a href="map.html">Карта штата</a></li>
+            <li><a href="#">Карта штата</a></li>
             <li><a href="hotels.html">Гостиницы</a></li>
           </ul>
         </nav>
       </header>
       <!--                      -->
-      <!-- Main content  -->
+      <!--     Main content     -->
       <!--                      -->
       <main class="main-content">
         <section class="intro">
           <h1 class="visually-hidden">Седона, штат Аризона</h1>
-          <img class="intro-img" src="img/bg-intro.jpg" alt="Wellcome to the gorgeous Sedona. Because the Grand Canyon sucks!" width="1200" height="800">
+          <img class="intro-img" src="img/intro-welcome.svg" alt="Wellcome to the gorgeous Sedona. Because the Grand Canyon sucks!" width="458" height="352">
         </section>
 
         <section class="about">
-          <h3 class="about-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h3>
+          <h2 class="about-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p class="about-lead">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </section>
 
@@ -48,7 +49,7 @@
             <h2 class="search-title">Заинтересовались?</h2>
             <p class="search-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
           </div>
-          <button type="button" class="button search-open-button" name="search-open">Поиск гостиницы в Седоне</button>
+          <button type="button" class="button search-open-button">Поиск гостиницы в Седоне</button>
           <!--         -->
           <!--  form   -->
           <!--         -->
@@ -69,24 +70,24 @@
               <button type="button" name="search-form-input search-form-input-minus">
                 <span class="visually-hidden">Уменьшить</span>
               </button>
-              <input type="text" name="adults" id="adults" value="2">
-              <button type="button" name="search-form-input search-form-input-plus">
+              <input type="text" class="adults" id="adults" value="2">
+              <button type="button" class="search-form-input search-form-input-plus">
                 <span class="visually-hidden">Увеличить</span>
               </button>
             </div>
             <!--  children field   -->
             <div class="search-form-field children-field">
               <label for="children">Дети</label>
-              <button type="button" name="search-form-input search-form-input-minus">
+              <button type="button" class="search-form-input search-form-input-minus">
                 <span class="visually-hidden">Уменьшить</span>
               </button>
               <input type="text" name="children" id="children" value="0">
-              <button type="button" name="search-form-input search-form-input-plus">
+              <button type="button" class="search-form-input search-form-input-plus">
                 <span class="visually-hidden">Увеличить</span>
               </button>
             </div>
             <!--  submit field   -->
-            <button type="submit" name="submit-button" class="search-form-submit">Найти</button>
+            <button type="submit" class="button search-form-submit">Найти</button>
           </form>
 
         </section>
@@ -104,10 +105,10 @@
         </div>
 
         <div class="footer-social">
-          <ul>
-            <li><a class="social-button" href="#">Твиттер</a></li>
-            <li><a class="social-button" href="#">Фейсбук</a></li>
-            <li><a class="social-button" href="#">Ютуб</a></li>
+          <ul class="social-list">
+            <li><a class="social-button social-twitter" href="#"><span class="visually-hidden">Твиттер</span></a></li>
+            <li><a class="social-button social-facebook" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+            <li><a class="social-button social-youtube" href="#"><span class="visually-hidden">Ютуб</span></a></li>
           </ul>
         </div>
 
