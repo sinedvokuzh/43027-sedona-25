@@ -1,123 +1,137 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic,latin-ext" rel="stylesheet">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
 
-      <!--            -->
-      <!-- navigation  -->
-      <!--            -->
-      <header class="main-header">
-        <nav class="main-navigation">
-          <a class="logo">
-            <img class="logo" src="img/logo-sedona.svg" width="138" height="70" alt="логотип Sedona">
-          </a>
-          <ul class="site-navigation">
-            <li><a href="#">Информация</a></li>
-            <li><a href="#">Фото и видео</a></li>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic,latin-ext" rel="stylesheet">
+  <title>HTML Academy: Седона</title>
+</head>
 
-            <li><a href="#">Карта штата</a></li>
-            <li><a href="hotels.html">Гостиницы</a></li>
-          </ul>
-        </nav>
-      </header>
-      <!--                      -->
-      <!--     Main content     -->
-      <!--                      -->
-      <main class="main-content">
-        <section class="intro">
-          <h1 class="visually-hidden">Седона, штат Аризона</h1>
-          <img class="intro-img" src="img/intro-welcome.svg" alt="Wellcome to the gorgeous Sedona. Because the Grand Canyon sucks!" width="458" height="352">
-        </section>
+<body>
 
-        <section class="about">
-          <h2 class="about-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-          <p class="about-lead">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        </section>
+  <!--            -->
+  <!-- navigation  -->
+  <!--            -->
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="logo-link">
+        <img class="logo" src="img/logo-sedona.svg" width="138" height="70" alt="логотип Sedona">
+      </a>
+      <ul class="site-navigation">
+        <li><a href="#">Информация</a></li>
+        <li><a href="#">Фото и видео</a></li>
 
-        <section class="reasons">
-          <h2 class="visually-hidden">Преимущества</h2>
-        </section>
+        <li><a href="#">Карта штата</a></li>
+        <li><a href="hotels.html">Гостиницы</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!--                      -->
+  <!--     Main content     -->
+  <!--                      -->
+  <main class="main-content">
+    <section class="intro">
+      <h1 class="visually-hidden">Седона, штат Аризона</h1>
+      <img class="intro-img" src="img/intro-welcome.svg" alt="Wellcome to the gorgeous Sedona. Because the Grand Canyon sucks!" width="458" height="352">
+    </section>
 
-        <section class="search">
-          <div class="search-info">
-            <h2 class="search-title">Заинтересовались?</h2>
-            <p class="search-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          </div>
-          <button type="button" class="button search-open-button">Поиск гостиницы в Седоне</button>
-          <!--         -->
-          <!--  form   -->
-          <!--         -->
-          <form class="search-form" action="hotel-seach" method="get">
-            <!--  check-in field   -->
-            <div class="search-form-field">
-              <label for="check-in">Дата заезда</label>
-              <input type="text" name="check-in" id="check-in" placeholder="24 апреля 2017">
-            </div>
-            <!--  check-out field   -->
-            <div class="search-form-field">
-              <label for="check-out">Дата выезда</label>
-              <input type="text" name="check-out" id="check-out" placeholder="4 июля 2017">
-            </div>
-            <!--  adults field   -->
-            <div class="search-form-field adults-field">
-              <label for="adults">Взрослые</label>
-              <button type="button" name="search-form-input search-form-input-minus">
-                <span class="visually-hidden">Уменьшить</span>
-              </button>
-              <input type="text" class="adults" id="adults" value="2">
-              <button type="button" class="search-form-input search-form-input-plus">
-                <span class="visually-hidden">Увеличить</span>
-              </button>
-            </div>
-            <!--  children field   -->
-            <div class="search-form-field children-field">
-              <label for="children">Дети</label>
-              <button type="button" class="search-form-input search-form-input-minus">
-                <span class="visually-hidden">Уменьшить</span>
-              </button>
-              <input type="text" name="children" id="children" value="0">
-              <button type="button" class="search-form-input search-form-input-plus">
-                <span class="visually-hidden">Увеличить</span>
-              </button>
-            </div>
-            <!--  submit field   -->
-            <button type="submit" class="button search-form-submit">Найти</button>
-          </form>
+    <section class="about">
+      <h2 class="about-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+      <p class="about-lead">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    </section>
 
-        </section>
-        <section class="map">
-          <h2 class="visually-hidden">Расположение Седоны на карте</h2>
-          <img class="map__img" src="img/map.jpg" width="1200" height="593" alt="Седона на карте">
-        </section>
-      </main>
+    <section class="reasons">
+      <h2 class="visually-hidden">Преимущества</h2>
+    </section>
+
+    <section class="search">
+      <div class="search-info">
+        <h2 class="search-title">Заинтересовались?</h2>
+        <p class="search-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      </div>
+      <button type="button" class="button search-open-button">Поиск гостиницы в Седоне</button>
       <!--         -->
-      <!-- footer  -->
+      <!--  form   -->
       <!--         -->
-      <footer class="main-footer">
-        <div class="page-footer__more-info">
-          <a class="hashtag" href="#">#visitSedona</a>
+      <form class="search-form" action="hotel-seach" method="get">
+        <!--  check-in field   -->
+        <div class="search-form-field">
+          <label for="check-in">Дата заезда</label>
+          <input type="text" name="check-in" id="check-in" placeholder="24 апреля 2017">
         </div>
-
-        <div class="footer-social">
-          <ul class="social-list">
-            <li><a class="social-button social-twitter" href="#"><span class="visually-hidden">Твиттер</span></a></li>
-            <li><a class="social-button social-facebook" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
-            <li><a class="social-button social-youtube" href="#"><span class="visually-hidden">Ютуб</span></a></li>
-          </ul>
+        <!--  check-out field   -->
+        <div class="search-form-field">
+          <!-- <label for="check-out">Дата выезда</label> -->
+          <input type="text" name="check-out" id="check-out" placeholder="4 июля 2017">
         </div>
+        <!--  adults field   -->
+        <div class="search-form-field adults-field">
+          <label for="adults">Взрослые</label>
+          <button type="button" name="search-form-input search-form-input-minus">
+            <span class="visually-hidden">Уменьшить</span>
+          </button>
+          <input type="text" class="adults" id="adults" value="2">
+          <button type="button" class="search-form-input search-form-input-plus">
+            <span class="visually-hidden">Увеличить</span>
+          </button>
+        </div>
+        <!--  children field   -->
+        <div class="search-form-field children-field">
+          <label for="children">Дети</label>
+          <button type="button" class="search-form-input search-form-input-minus">
+            <span class="visually-hidden">Уменьшить</span>
+          </button>
+          <input type="text" name="children" id="children" value="0">
+          <button type="button" class="search-form-input search-form-input-plus">
+            <span class="visually-hidden">Увеличить</span>
+          </button>
+        </div>
+        <!--  submit field   -->
+        <button type="submit" class="button search-form-submit">Найти</button>
+      </form>
 
-        <p class="footer-copyright">
-          <b>Website by</b>
-          <a class="developer" href="https://htmlacademy.ru">HTML Academy
+    </section>
+    <section class="map">
+      <h2 class="visually-hidden">Расположение Седоны на карте</h2>
+      <img class="map__img" src="img/map.jpg" width="1200" height="593" alt="Седона на карте">
+    </section>
+  </main>
+  <!--         -->
+  <!-- footer  -->
+  <!--         -->
+  <footer class="main-footer">
+    <div class="page-footer__more-info">
+      <a class="hashtag" href="#">#visitSedona</a>
+    </div>
+
+    <div class="footer-social">
+      <ul class="social-list">
+        <li>
+          <a class="social-button social-twitter" href="#">
+            <span class="visually-hidden">Твиттер</span>
           </a>
-        </p>
+        </li>
+        <li>
+          <a class="social-button social-facebook" href="#">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
+        </li>
+        <li>
+          <a class="social-button social-youtube" href="#">
+            <span class="visually-hidden">Ютуб</span>
+          </a></li>
+      </ul>
+    </div>
 
-      </footer>
-  </body>
+    <p class="footer-copyright">
+      <b>Website by</b>
+      <a class="developer" href="https://htmlacademy.ru">HTML Academy
+      </a>
+    </p>
+
+  </footer>
+</body>
+
 </html>

@@ -16,20 +16,44 @@ a {
     text-decoration: none;
 }
 
+.main-header {
+  max-width: 1200px;
+  margin: auto;
+}
+
 .main-navigation {
     font-weight: 700;
     line-height: 26px;
     color: #000000;
+
+    height: 57px;
 
     background-color: #ffffff;
 }
 
 .site-navigation {
     list-style: none;
+
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    text-align: center;
+
 }
 
 .site-navigation a {
     color: #000000;
+
+}
+
+.site-navigation li {
+  width: 25%;
 }
 
 .site-navigation a:hover,
@@ -44,6 +68,13 @@ a {
 a.active-link {
     color: #766357;
 }
+
+.logo-link {
+  display: block;
+  position: absolute;
+  left: 50%;
+}
+
 
 .visually-hidden {
   position: absolute;
