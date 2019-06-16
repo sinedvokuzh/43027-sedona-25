@@ -46,14 +46,20 @@
       <h2 class="visually-hidden">Преимущества</h2>
       <ul class="reasons-list">
         <li class="reasons-item blue">
-          <h3 class="reason-title">Настоящий городок</h3>
-          <span class="reason-numder">— №1 —</span>
-          <p class="reason-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          <div class="reason-wrap">
+            <h3 class="reason-title">Настоящий городок</h3>
+            <span class="reason-numder">— №1 —</span>
+            <p class="reason-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          </div>
+          <img class="reason-img" src="img/feature-picture-1.jpg" alt="Седона" width="800" height="256">
         </li>
         <li class="reasons-item blue">
-          <h3 class="reason-title">Там есть Мост&nbsp;дьявола</h3>
-          <span class="reason-numder">— №2 —</span>
-          <p class="reason-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          <img class="reason-img" src="img/feature-picture-2.jpg" alt="Седона" width="800" height="256">
+          <div class="reason-wrap">
+            <h3 class="reason-title">Там есть Мост&nbsp;дьявола</h3>
+            <span class="reason-numder">— №2 —</span>
+            <p class="reason-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </div>
         </li>
 
         <li class="reasons-item gray">
@@ -69,7 +75,7 @@
         <li class="reasons-item gray">
           <h3 class="reason-title">Мало туристов</h3>
           <span class="reason-numder">— №5 —</span>
-          <p class="reason-description">Большинство едет в гранд каньон и толпится там</p>
+          <p class="reason-description">Большинство едет в гранд каньон и&nbsp;толпится там</p>
         </li>
 
         <li class="reasons-item features">
@@ -84,7 +90,7 @@
             </li>
             <li class="features-item souvenirs">
               <h3 class="features-title">Сувениры</h3>
-              <p class="features-description">Не только китайского, но и местного производства!</p>
+              <p class="features-description">Не только китайского, но и&nbsp;местного производства!</p>
             </li>
           </ul>
         </li>
@@ -96,46 +102,50 @@
         <h2 class="search-title">Заинтересовались?</h2>
         <p class="search-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
       </div>
-      <button type="button" class="button search-open-button">Поиск гостиницы в Седоне</button>
-      <!--         -->
-      <!--  form   -->
-      <!--         -->
-      <form class="search-form" action="hotel-seach" method="get">
-        <!--  check-in field   -->
-        <div class="search-form-field">
-          <label for="check-in">Дата заезда</label>
-          <input type="text" name="check-in" id="check-in" placeholder="24 апреля 2017">
-        </div>
-        <!--  check-out field   -->
-        <div class="search-form-field">
-          <!-- <label for="check-out">Дата выезда</label> -->
-          <input type="text" name="check-out" id="check-out" placeholder="4 июля 2017">
-        </div>
-        <!--  adults field   -->
-        <div class="search-form-field adults-field">
-          <label for="adults">Взрослые</label>
-          <button type="button" name="search-form-input search-form-input-minus">
-            <span class="visually-hidden">Уменьшить</span>
-          </button>
-          <input type="text" class="adults" id="adults" value="2">
-          <button type="button" class="search-form-input search-form-input-plus">
-            <span class="visually-hidden">Увеличить</span>
-          </button>
-        </div>
-        <!--  children field   -->
-        <div class="search-form-field children-field">
-          <label for="children">Дети</label>
-          <button type="button" class="search-form-input search-form-input-minus">
-            <span class="visually-hidden">Уменьшить</span>
-          </button>
-          <input type="text" name="children" id="children" value="0">
-          <button type="button" class="search-form-input search-form-input-plus">
-            <span class="visually-hidden">Увеличить</span>
-          </button>
-        </div>
-        <!--  submit field   -->
-        <button type="submit" class="button search-form-submit">Найти</button>
-      </form>
+      <div class="search-wrapper">
+        <button type="button" class="button search-open-button">Поиск гостиницы в Седоне</button>
+        <!--         -->
+        <!--  form   -->
+        <!--         -->
+        <form class="search-form" action="hotel-seach" method="get">
+          <!--  check-in field   -->
+          <div class="search-form-field check-in">
+            <label for="check-in">Дата заезда</label>
+            <input type="text" class="search-form-input" name="check-in" id="check-in" placeholder="24 апреля 2017">
+          </div>
+          <!--  check-out field   -->
+          <div class="search-form-field">
+            <label for="check-out">Дата выезда</label>
+            <input type="text" name="check-out" id="check-out" placeholder="4 июля 2017">
+          </div>
+          <!--  adults field   -->
+          <div class="form-wrapper">
+            <div class="search-form-field adults-field">
+              <label for="adults">Взрослые</label>
+              <button type="button" name="search-form-input search-form-input-minus">
+                <span class="visually-hidden">Уменьшить</span>
+              </button>
+              <input type="text" class="adults" id="adults" value="2">
+              <button type="button" class="search-form-input search-form-input-plus">
+                <span class="visually-hidden">Увеличить</span>
+              </button>
+            </div>
+            <!--  children field   -->
+            <div class="search-form-field children-field">
+              <label for="children">Дети</label>
+              <button type="button" class="search-form-input search-form-input-minus">
+                <span class="visually-hidden">Уменьшить</span>
+              </button>
+              <input type="text" name="children" id="children" value="0">
+              <button type="button" class="search-form-input search-form-input-plus">
+                <span class="visually-hidden">Увеличить</span>
+              </button>
+            </div>
+          </div>
+          <!--  submit field   -->
+          <button type="submit" class="button search-form-submit">Найти</button>
+        </form>
+      </div>
 
     </section>
     <section class="map">
@@ -146,7 +156,7 @@
   <!--         -->
   <!-- footer  -->
   <!--         -->
-  <footer class="main-footer">
+  <footer class="main-footer container">
     <div class="page-footer__more-info">
       <a class="hashtag" href="#">#visitSedona</a>
     </div>
