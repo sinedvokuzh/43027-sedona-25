@@ -16,10 +16,10 @@ a {
     text-decoration: none;
 }
 
-.main-header {
-  max-width: 1200px;
-  margin: auto;
-}
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 
 .main-navigation {
     font-weight: 700;
@@ -70,9 +70,10 @@ a.active-link {
 }
 
 .logo-link {
-  display: block;
   position: absolute;
   left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 60px;
 }
 
 
@@ -91,15 +92,41 @@ a.active-link {
 }
 
 section.intro  {
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 75px;
   width: 100%;
-  height: 800px;
+  height: auto;
   background: #ffffff url("../img/bg-intro.jpg") no-repeat top center;
 }
 
 .intro-img {
-  display: block;
   margin: auto;
+  padding-bottom: 21px;
+}
+
+.intro::after {
+    content: "";
+    background: url("../img/polygon.svg") no-repeat center bottom;
+    background-size: 100% auto;
+    z-index: 1;
+    height: 58px;
+    position: relative;
+    bottom: -1px;
+}
+
+.about {
+  background-color: #ffffff;
+  padding-top: 65px;
+  padding-bottom: 50px;
+}
+
+.about-title {
+  padding-bottom: 30px;
+}
+
+.about-lead {
+  margin: 0;
 }
 
 h2.about-title {
@@ -114,6 +141,57 @@ h2.about-title {
 h2.search-title {
   font-size: 30px;
   text-align: center;
+}
+
+.reasons ul {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.reasons-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.reasons-item {
+  min-height: 256px;
+  flex-basis: 33.33%;
+}
+
+.reasons h3 {
+  font-size: 21px;
+  max-width: 160px;
+  margin: auto;
+  line-height: 21px;
+}
+
+.reason-description {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.reason-title .gray,
+.features-title {
+  color: #000000;
+}
+
+li.blue {
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+
+li.first-child::after {
+  display: block;
+  background: url("../img/feature-picture-1.jpg") no-repeat center center;
+  flex-basis: 66.66%;
+  min-height: 256px;
+}
+
+li.gray {
+  background-color: #eeeeee;
 }
 
 p.about-lead,
@@ -189,6 +267,10 @@ div.search-form-field {
 
 .search-results-book {
   background: #766357;
+}
+
+.map {
+  margin: auto;
 }
 
 .hashtag {
